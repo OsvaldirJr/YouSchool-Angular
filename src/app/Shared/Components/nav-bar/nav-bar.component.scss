@@ -1,0 +1,98 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 110px 0px 220px;
+
+    position: absolute;
+    width: 100vw;
+    height: 56px;
+    left: 0px;
+    top: 0px;
+
+    /* Primary */
+
+    background: #00498F;
+    /* Low-Elevation */
+
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.logo{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: 5vw;
+    top: 1vh;
+
+    /* Accent */
+
+    background: #8BD100;
+    /* Low-Elevation */
+
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 150px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.text{
+    /* h3 */
+    text-align: center;
+    margin-top: 1.5vh;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+
+    /* Neutral-White */
+
+    color: #F5F5F5;
+}
+
+.link{
+    color: #8BD100;
+    text-decoration: none;
+}
+
+.navitem{
+    
+    text-decoration: none;
+    color: #F5F5F5;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #F5F5F5;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8BD100;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
