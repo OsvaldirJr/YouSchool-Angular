@@ -4,18 +4,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 110px 0px 220px;
-
     position: absolute;
     width: 100vw;
     height: 56px;
     left: 0px;
     top: 0px;
-
-    /* Primary */
-
     background: #00498F;
-    /* Low-Elevation */
-
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
@@ -25,17 +19,9 @@
     height: 92px;
     left: 5vw;
     top: 1vh;
-
-    /* Accent */
-
     background: #8BD100;
-    /* Low-Elevation */
-
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
     border-radius: 150px;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -43,7 +29,6 @@
 }
 
 .text{
-    /* h3 */
     text-align: center;
     margin-top: 1.5vh;
     font-family: 'Montserrat';
@@ -51,9 +36,6 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 29px;
-
-    /* Neutral-White */
-
     color: #F5F5F5;
 }
 
@@ -63,7 +45,6 @@
 }
 
 .navitem{
-    
     text-decoration: none;
     color: #F5F5F5;
     font-family: 'Montserrat';
