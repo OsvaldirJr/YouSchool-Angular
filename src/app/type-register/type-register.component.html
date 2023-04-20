@@ -1,0 +1,20 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="bg">
+    <div class="card">
+        <h5 class="card-title">Selecione o tipo de conta:</h5>
+        <div class="d-flex mx-auto justify-center">
+            <div class="box-aluno" (click)="navegateToAluno()">
+                <img src="../../assets/edit.png" class="img-aluno">
+                <p class="text-aluno">Sou <span class="span-aluno">aluno</span></p>
+            </div>
+
+            <div class="divisor"></div>
+            
+            <div class="box-prof" (click)="navegateToProf()">
+                <img src="../../assets/school.png" class="img-prof">
+                <p class="text-prof">Sou <span class="span-prof">professor</span></p>
+            </div>
+        </div>
+    </div>
+</div>
