@@ -1,0 +1,76 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="bg">
+    <div class="card">
+        <div class=" mx-auto ">
+            <div class=" d-flex box-aluno justify-center">
+                <div>
+                    <div class="img-lapis">
+                        <img src="../../assets/edit.png" class="img-aluno">
+                    </div>
+                    <p class="text-aluno">Cadastro de Aluno</p>
+                    <p class="dadospessoais">Dados pessoais:</p>
+                    <div>
+                        <form class="form">
+                            <div class="nome-idade">
+                                <mat-form-field class="nome" appearance="outline">
+                                    <mat-label>Nome</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+                                <mat-form-field class="idade" appearance="outline">
+                                    <mat-label>Idade</mat-label>
+                                    <input type="number" matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            </div>
+                            <mat-form-field class="sobrenome" appearance="outline">
+                                <mat-label>Sobrenome</mat-label>
+                                <input matInput placeholder="Placeholder">
+                            </mat-form-field>
+                            <div class="cidade-uf">
+                                <mat-form-field class="cidade" appearance="outline">
+                                    <mat-label>Cidade</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+
+                                <mat-form-field class="uf" appearance="outline">
+                                    <mat-label>UF</mat-label>
+                                    <mat-select>
+                                      <mat-option [value]="state.id" *ngFor="let state of states">{{state.nome}} </mat-option>
+                                    </mat-select>
+                                  </mat-form-field>
+                            </div>
+                            <div class="login">
+                                <p>Login:</p>
+                            </div>
+                            <div class="email-senha">
+                                <mat-form-field class="email" appearance="outline">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+
+                                <mat-form-field class="senha" appearance="outline">
+                                    <mat-label>Senha</mat-label>
+                                    <input matInput placeholder="Placeholder">
+                                </mat-form-field>
+                            <div class="ou">
+                                <p>ou</p>
+                            </div>    
+                            </div>
+                            <div class="redessociais">
+                                <a class="google" href="">
+                                    <img src="../../../assets/google-logo-9824 1.png" alt="Link Google"> Google
+                                </a>
+                                <a class="facebook" href="">
+                                    <img src="../../../assets/Facebook_Logo_(2019) 1.png" alt="Link Facebook"> Facebook
+                                </a>
+                            </div>
+                            <div class="botao-avancar">
+                                <input type="submit" id="avancar" value="Avançar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
